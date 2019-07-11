@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  data:
+    cassandra:
+      keyspace-name: places
+      schema-action: recreate_drop_unused
+      contact-points: localhost
+      port: 9042
